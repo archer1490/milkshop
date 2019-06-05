@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Lactalis</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="img/logo.png">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">Йогурт</a>
+                </li>
+                <li>
+                    <a href="#">Кефір</a>
+                </li>
+                <li>
+                    <a href="#">Сметана</a>
+                </li>
+            </ul>
+
+            <form style="margin: 5px;">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="Пошук">
+                </div>
+                <button type="submit" class="btn btn-info active btn-lg btn-block">Шукати</button>
+            </form>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Продукція</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="mainmenu collapse navbar-collapse" style="color #29739e;" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link mainmenu" href="#">Про нас</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link mainmenu" href="#">Ігри</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link mainmenu" href="#">Оплата і доставка</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link mainmenu" href="#">Увійти</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" style="color #29739e;" href="#">Кошик</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container" id="product-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="col-md-6">
+                            <div style="margin: 0 auto;">
+                                <img src="img/yogurt.png" alt="Йогурт питний чорниця" class="image-responsive" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1>Йогурт Питний Чорниця</h1>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h2>15.00 грн</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <pre>  </pre>
+                            <form class="form-inline">
+                                <div class="col-xs-4">
+                                    <input type="number" name="number_of_product" class="form-control input-number" value="1" min="1" max="10">
+                                </div>
+                                <span>&#8195;</span>
+                                <button type="button" class="btn btn-success">В кошик</button>
+                            </form>
+                        </div>
+                        <br>
+                        <br>
+                        <!-- Nav tabs -->
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Опис</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Склад</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <p>Йогурт Чорниця — кисломолочний продукт, що виробляється шляхом квашення його чистими культурами молочнокислих бактерій з додаванням чорничного наповнювача</p>
+                            <p>жирність: 2,5 %</p>
+                            <p>маса нетто: 0.290 кг</p>
+                            <p>смак: чорниця</p>
+                            <p>Термін зберігання: 1 місяць *</p>
+                            <p>* термін зберігання на день доставки не більше 50% від номінального</p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <p>Склад: молоко знежирене, сироватка, вершки, фруктовий наповнювач "чорниця"...</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><!-- end row -->
+            </div><!-- end container -->
+
+
+
+
+        </div>
+    </div>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
